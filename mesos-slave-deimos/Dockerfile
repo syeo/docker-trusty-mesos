@@ -2,7 +2,7 @@ FROM syeo/trusty-mesos
 MAINTAINER Stanley Yeo <yyoud88@gmail.com>
 
 RUN apt-get update && \
-    apt-get install -y python python-setuptools && \
+    apt-get install -y python python-setuptools docker.io && \
     easy_install pip && \
     pip install deimos && \
     mkdir -p /etc/mesos-slave && \
